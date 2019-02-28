@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anorb.irrigationsystemv2.MainActivity">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/Swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Swipe to refresh"
+                android:textSize="20sp" />
+
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/text_param1"
+                            android:layout_width="190dp"
+                            android:layout_height="wrap_content"
+                            android:text="temperature"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/text_value1"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text=" "
+                            android:textSize="30sp" />
+                        <TextView
+                            android:id="@+id/text_unit1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="C"
+                            android:textSize="30sp" />
+
+                    </LinearLayout>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_param2"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:text="humidity"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/text_value2"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text=" "
+                        android:textSize="30sp" />
+                    <TextView
+                        android:id="@+id/text_unit2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="%"
+                        android:textSize="30sp" />
+
+                </LinearLayout>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_param3"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:text="moisture"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/text_value3"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text=" "
+                        android:textSize="30sp" />
+                    <TextView
+                        android:id="@+id/text_unit3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="%"
+                        android:textSize="30sp" />
+
+                </LinearLayout>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_param4"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:text="water level"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/text_value4"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text=" "
+                        android:textSize="30sp" />
+                    <TextView
+                        android:id="@+id/text_unit4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="%"
+                        android:textSize="30sp" />
+
+                </LinearLayout>
+
+
+            </TableLayout>
+
+            <Button
+                android:id="@+id/button_pump"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="turn on the water pump" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>
